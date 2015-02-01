@@ -1,7 +1,12 @@
 .container {
   margin-top: 20px;
 }
+h1 {
+  font-size: 4em;
+}
 #kavinism {
+  margin-top: 50px;
   text-align: center;
   font-size: 8em;
+  line-height: 100%;
 }
