@@ -7,7 +7,7 @@ var
     ANIM_END = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     ANIM_IN = 'fadeInLeft',
     ANIM_OUT = 'zoomOut',
-    VIDEO_ID = 'zKdwTgrow3E',
+    VIDEO_ID = '2HQaBWziYvY',
     EMBED = '<iframe style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/' +
             VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
     SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
