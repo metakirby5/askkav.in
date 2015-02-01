@@ -1,5 +1,10 @@
 h1 {
-  font-size: 4em;
+  font-size: 3em;
+}
+@media only screen and (min-device-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
 }
 .kavin-accent {
   color: #f44336;
@@ -13,7 +18,7 @@ input[type="text"]:focus {
   margin-top: 50px;
   text-align: center;
   line-height: 100%;
-  font-size: 6em;
+  font-size: 4em;
 }
 @media only screen and (min-device-width: 768px) {
   #kavinism {
