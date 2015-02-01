@@ -11,5 +11,8 @@ KAVINISMS = [
 ];
 
 SECRETISMS = [
-  "Bob is gay."
+  "Bob is gay.",
+  "Yookoso.",
+  "Ore wa gundam.",
+  "Totemo."
 ];
