@@ -1,0 +1,29 @@
+include inc/mixins.jade
+
+doctype html
+
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    meta(name="description" content="Ask Kavin Srithongkham")
+    title(data-bind="askkav.in")
+
+    // Stylesheets
+    include inc/css.jade
+  body
+    .container
+      h1 askkav.in
+
+      form#ask
+        fieldset#ask-fields.form-group.form-group-lg
+          .input-group
+            input#question.form-control(type="text"
+                 placeholder="What is your question for Kavin-sama?")
+            span.input-group-btn
+              button.btn.btn-lg.btn-primary(type="submit") Ask!
+
+      #kavinism.animated
+
+      // Scripts
+      include inc/js.jade
