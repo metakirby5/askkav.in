@@ -7,13 +7,22 @@ KAVINISMS = [
   "Wow.",
   "You <i>son</i> of a bitch.",
   "Aww shiieet.",
+  "Well shiieet.",
   "Welp.",
-  "<b>Hey.</b> You stop that right now."
+  "<b>Hey.</b> You stop that right now.",
+  "Hey! What do you think you're doing?",
+  "Ohhh hohohohoho.",
+  "You monster.",
+  "Can you believe this guy?",
+  "Well there ya go.",
+  "You <i>motherfucker</i>."
 ];
 
 SECRETISMS = [
   "Bob is gay.",
   "Yookoso.",
   "Ore wa Gundam.",
-  "Totemo."
+  "Totemo.",
+  "Ningen Nandarou?",
+  "Pengin Dakara!"
 ];
