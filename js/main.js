@@ -1,4 +1,4 @@
-(function($, _, KAVINISMS) {
+(function($, _, KAVINISMS, SECRETISMS) {
 
 "use strict";
 
@@ -7,6 +7,7 @@ var
     ANIM_END = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     ANIM_IN = 'fadeInLeft',
     ANIM_OUT = 'zoomOut',
+    CHANCE = 0.01,
     VIDEO_ID = '2HQaBWziYvY',
     EMBED = '<iframe style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/' +
             VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
@@ -26,7 +27,8 @@ var
 // Pre - text is not visible (animationed out or otherwise)
 // Post - form re-enabled
 var kavinismHandler = function() {
-  $kavinism.html(_.sample(KAVINISMS));
+  var isms = Math.random() > CHANCE ? KAVINISMS : SECRETISMS;
+  $kavinism.html(_.sample(isms));
   $kavinism.removeClass(ANIM_OUT).addClass(ANIM_IN).one(ANIM_END, function() {
 
     // Re-enable form
@@ -69,4 +71,4 @@ $(function() {
   });
 });
 
-})(window.jQuery, window._, window.KAVINISMS);
+})(window.jQuery, window._, window.KAVINISMS, window.SECRETISMS);

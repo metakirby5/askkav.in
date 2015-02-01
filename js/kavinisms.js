@@ -9,3 +9,7 @@ KAVINISMS = [
   "Welp.",
   "<b>Hey!</b> You put that down right now."
 ];
+
+SECRETISMS = [
+  "Bob is gay."
+];
