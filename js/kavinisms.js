@@ -7,7 +7,7 @@ KAVINISMS = [
   "You <i>son</i> of a bitch.",
   "Aww shiieet.",
   "Welp.",
-  "You stop that right now."
+  "<b>Hey.</b> You stop that right now."
 ];
 
 SECRETISMS = [
