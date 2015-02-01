@@ -26,7 +26,7 @@ var
 // Pre - text is not visible (animationed out or otherwise)
 // Post - form re-enabled
 var kavinismHandler = function() {
-  $kavinism.text(_.sample(KAVINISMS));
+  $kavinism.html(_.sample(KAVINISMS));
   $kavinism.removeClass(ANIM_OUT).addClass(ANIM_IN).one(ANIM_END, function() {
 
     // Re-enable form
