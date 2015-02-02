@@ -8,7 +8,8 @@ window.KAVINISMS = [
   "Aww shiieet.",
   "Welp.",
   "<b>Hey.</b> You stop that right now.",
-  "<i>What</i> do you think you're doing."
+  "<i>What</i> do you think you're doing.",
+  "That's what <i>I'm</i> saying."
 ];
 
 window.SECRETISMS = [
