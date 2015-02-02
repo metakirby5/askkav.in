@@ -7,7 +7,8 @@ window.KAVINISMS = [
   "You <i>son</i> of a bitch.",
   "Aww shiieet.",
   "Welp.",
-  "<b>Hey.</b> You stop that right now."
+  "<b>Hey.</b> You stop that right now.",
+  "<i>What</i> do you think you're doing."
 ];
 
 window.SECRETISMS = [
