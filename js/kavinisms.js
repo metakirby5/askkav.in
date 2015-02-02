@@ -1,15 +1,15 @@
 window.KAVINISMS = [
-  "You need to <b>calm</b> down.",
+  "You need to <strong>calm</strong> down.",
   "How dare you.",
   "Rekt.",
   "You should be ashamed of yourself.",
   "Wow.",
-  "You <i>son</i> of a bitch.",
+  "You <em>son</em> of a bitch.",
   "Aww shiieet.",
   "Welp.",
-  "<b>Hey.</b> You stop that right now.",
-  "<i>What</i> do you think you're doing.",
-  "That's what <i>I'm</i> saying."
+  "<strong>Hey.</strong> You stop that right now.",
+  "<em>What</em> do you think you're doing.",
+  "That's what <em>I'm</em> saying."
 ];
 
 window.SECRETISMS = [
