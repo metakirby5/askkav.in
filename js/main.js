@@ -7,6 +7,7 @@ var
     ANIM_END = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     ANIM_IN = 'fadeInLeft',
     ANIM_OUT = 'zoomOut',
+    ACCENT = 'accent',
     CHANCE = 0.01,
     VIDEO_ID = '2HQaBWziYvY',
     EMBED = '<iframe style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/' +
@@ -27,12 +28,15 @@ var
 // Pre - text is not visible (animationed out or otherwise)
 // Post - form re-enabled
 var kavinismHandler = function() {
-  var isms = Math.random() > CHANCE ? KAVINISMS : SECRETISMS;
-  $kavinism.html(_.sample(isms));
-  $kavinism.removeClass(ANIM_OUT).addClass(ANIM_IN).one(ANIM_END, function() {
+  var useSecret = Math.random() <= CHANCE;
+  $kavinism.html(_.sample(useSecret ? SECRETISMS : KAVINISMS));
+  $kavinism.
+    removeClass([ANIM_OUT, ACCENT].join(' ')).
+    addClass([ANIM_IN, useSecret ? ACCENT : ''].join(' ')).
+    one(ANIM_END, function() {
 
-    // Re-enable form
-    $askFields.prop('disabled', false);
+      // Re-enable form
+      $askFields.prop('disabled', false);
   });
 };
 
@@ -54,7 +58,10 @@ $(function() {
       first = false;
       kavinismHandler();
     } else {
-      $kavinism.removeClass(ANIM_IN).addClass(ANIM_OUT).one(ANIM_END, kavinismHandler);
+      $kavinism.
+        removeClass(ANIM_IN).
+        addClass(ANIM_OUT).
+        one(ANIM_END, kavinismHandler);
     }
   });
 
