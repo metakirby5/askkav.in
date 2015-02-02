@@ -6,10 +6,15 @@ window.KAVINISMS = [
   "Wow.",
   "You <em>son</em> of a bitch.",
   "Aww shiieet.",
-  "Welp.",
-  "<strong>Hey.</strong> You stop that right now.",
+  "Well shiieet.",
   "<em>What</em> do you think you're doing.",
-  "That's what <em>I'm</em> saying."
+  "That's what <em>I'm</em> saying.",
+  "<strong>Hey.</strong> You stop that right now.",
+  "Ohhh hohohohoho.",
+  "You monster.",
+  "Can you believe this guy?",
+  "Well there ya go.",
+  "You <em>motherfucker</em>."
 ];
 
 window.SECRETISMS = [
@@ -17,5 +22,7 @@ window.SECRETISMS = [
   "Yookoso.",
   "Ore wa Gundam.",
   "Totemo.",
-  "Kuso."
+  "Kuso.",
+  "Ningen Nandarou?",
+  "Pengin Dakara!"
 ];
