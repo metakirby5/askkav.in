@@ -1,4 +1,4 @@
-KAVINISMS = [
+window.KAVINISMS = [
   "You need to <b>calm</b> down.",
   "How dare you.",
   "Rekt.",
@@ -10,7 +10,7 @@ KAVINISMS = [
   "<b>Hey.</b> You stop that right now."
 ];
 
-SECRETISMS = [
+window.SECRETISMS = [
   "Bob is gay.",
   "Yookoso.",
   "Ore wa Gundam.",
