@@ -9,7 +9,7 @@ var
     ANIM_OUT = 'zoomOut',
     ACCENT = 'accent',
     CHANCE = 0.01,
-    EMBED_1 = '<iframe id="music" style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/',
+    EMBED_1 = '<iframe id="music" style="position:fixed; left:-1px" width="1" height="1" frameborder="0" src="//www.youtube.com/v/',
     EMBED_2 = '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
     SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
