@@ -14,7 +14,8 @@ window.KAVINISMS = [
   "You monster.",
   "Can you believe this guy?",
   "Well there ya go.",
-  "You <em>motherfucker</em>."
+  "You <em>motherfucker</em>.",
+  "I'll give you one <em>whole</em> dollar."
 ];
 
 window.SECRETISMS = [
