@@ -1,4 +1,4 @@
-(function($, _, KAVINISMS, SECRETISMS) {
+(function($, _, $AKV) {
 
 "use strict";
 
@@ -9,9 +9,8 @@ var
     ANIM_OUT = 'zoomOut',
     ACCENT = 'accent',
     CHANCE = 0.01,
-    VIDEO_ID = '2HQaBWziYvY',
-    EMBED = '<iframe style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/' +
-            VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
+    EMBED_1 = '<iframe id="music" style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/',
+    EMBED_2 = '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
     SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 // # Globals
@@ -29,7 +28,7 @@ var
 // Post - form re-enabled
 var kavinismHandler = function() {
   var useSecret = Math.random() <= CHANCE;
-  $kavinism.html(_.sample(useSecret ? SECRETISMS : KAVINISMS));
+  $kavinism.html(_.sample(useSecret ? $AKV.SECRETISMS : $AKV.KAVINISMS));
   $kavinism.
     removeClass([ANIM_OUT, ACCENT].join(' ')).
     addClass([ANIM_IN, useSecret ? ACCENT : ''].join(' ')).
@@ -72,10 +71,10 @@ $(function() {
     if (kkeys.length > SECRET.length)
       kkeys.shift();
     if (_.isEqual(kkeys, SECRET)) {
-      $document.unbind('keydown', secretFunc);
-      $body.append(EMBED);
+      $('#music').remove();
+      $body.append(EMBED_1 + _.sample($AKV.SONG_IDS) + EMBED_2);
     }
   });
 });
 
-})(window.jQuery, window._, window.KAVINISMS, window.SECRETISMS);
+})(window.jQuery, window._, window.$AKV);
